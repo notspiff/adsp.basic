@@ -14,7 +14,7 @@
 #define DBGAIN_SCALE         5.0
 #define Q_SCALE             32.0
 
-#ifndef M_PI && TARGET_WINDOWS
+#if !defined(M_PI) && defined(TARGET_WINDOWS)
 	#define _USE_MATH_DEFINES 
 	#include <cmath>
 #endif
